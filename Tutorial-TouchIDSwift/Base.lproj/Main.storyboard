@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2WK-sE-w2A">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
+    </dependencies>
+    <scenes>
+        <!--TouchID View Controller-->
+        <scene sceneID="tz1-r6-QZT">
+            <objects>
+                <viewController id="2WK-sE-w2A" customClass="TouchIDViewController" customModule="Tutorial_TouchIDSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="woG-Sy-Tfh"/>
+                        <viewControllerLayoutGuide type="bottom" id="UUN-vj-6wt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Zn-sc-Npa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2u-VL-adb">
+                                <rect key="frame" x="70" y="256" width="182" height="36"/>
+                                <state key="normal" title="Verificar Identidad" backgroundImage="greyButtonHighlight.png">
+                                    <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pruebaTouchID:" destination="2WK-sE-w2A" eventType="touchUpInside" id="qHp-az-NX4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IconPassword.png" translatesAutoresizingMaskIntoConstraints="NO" id="byo-83-fJY">
+                                <rect key="frame" x="25" y="256" width="50" height="41"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nzz-fZ-lrV">
+                                <rect key="frame" x="54" y="44" width="198" height="210"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.91000000000000003" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
+                        <size key="portraitSize" width="320" height="568"/>
+                        <size key="landscapeSize" width="568" height="320"/>
+                    </simulatedScreenMetrics>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wA0-LF-VE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63" y="275"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IconPassword.png" width="27" height="27"/>
+        <image name="greyButtonHighlight.png" width="36" height="36"/>
+        <image name="logo.png" width="778" height="800"/>
+    </resources>
+</document>
